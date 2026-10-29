@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أكاديمية مواهب صوريف الكروية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#131C2F;--navy2:#0D1424;--gold:#BFA45E;--bg:#F2F4F8;--ink:#131C2F;--muted:#5A6479;--line:#DDE2EB}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 Tajawal,Tahoma,sans-serif}
+h1,h2,h3{font-family:Cairo,Tajawal,sans-serif;line-height:1.3;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 18px Cairo,sans-serif;color:var(--gold);text-decoration:none}
+.brand img{height:50px;width:auto;background:#fff;border-radius:10px;padding:3px}
+.burger{margin-inline-start:auto;background:none;border:0;color:#fff;font-size:28px;cursor:pointer;padding:6px 10px}
+#menu{display:none;background:var(--navy2)}
+#menu.open{display:block}
+#menu a{display:block;padding:12px 24px;color:#fff;text-decoration:none;border-top:1px solid #ffffff1a;font-weight:500}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;justify-content:center;text-align:center;color:#fff;
+background:linear-gradient(180deg,#0D1424cc,#0D142466 40%,#0D1424e6),url(hero.jpg) center/cover,linear-gradient(160deg,#1c2a4a,#0D1424);padding:90px 20px 120px}
+.hero h1{font-size:clamp(34px,8vw,64px);font-weight:800}
+.hero p{font-size:20px;color:#E6E9F0;margin:12px 0 26px}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font:700 18px Cairo,sans-serif;padding:13px 34px;border-radius:99px;text-decoration:none;border:0;cursor:pointer}
+.btn.out{background:transparent;border:2px solid var(--gold);color:var(--navy)}
+.stats{background:#fff;border-radius:16px;box-shadow:0 10px 30px #131C2F26;margin:-70px auto 0;max-width:760px;position:relative;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:22px 8px}
+.stats b{display:block;font:800 32px Cairo,sans-serif;color:var(--navy)}
+.stats span{color:var(--muted);font-size:15px}
+section{padding:60px 0}
+h2{font-size:clamp(26px,5vw,36px);margin-bottom:12px}
+h2::after{content:"";display:block;width:54px;height:4px;background:var(--gold);border-radius:4px;margin-top:10px}
+.lead{color:var(--muted);max-width:40em}
+.dark{background:var(--navy);color:#fff}.dark .lead{color:#C9D0DE}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+.box{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--line)}
+.box h3{font-size:22px;color:var(--navy)}.box p{margin:6px 0 0;color:var(--muted);font-size:16px}
+.dark .box{background:#ffffff0f;border-color:#ffffff22}.dark .box h3{color:var(--gold)}.dark .box p{color:#C9D0DE}
+form{display:grid;gap:14px;max-width:520px;margin-top:22px}
+label{display:grid;gap:4px;font-weight:700;font-size:15px}
+input,select{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+#msg{font-weight:700;min-height:1.6em}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-top:12px;max-width:640px;color:var(--ink)}
+.card b{color:var(--navy)}.card p{margin:4px 0 0}
+.potw{background:var(--navy);color:#fff;border-radius:14px;padding:24px;max-width:640px;margin-top:14px}
+.potw h3{font-size:28px;color:var(--gold)}
+footer{background:var(--navy2);color:#AEB7C9;text-align:center;padding:26px 20px;font-size:15px}
+@media(max-width:420px){.stats b{font-size:26px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="#"><img src="logo.png" alt="" onerror="this.remove()"><span>مواهب صوريف</span></a>
+<button class="burger" id="bg" aria-label="القائمة" aria-expanded="false">☰</button></div>
+<nav id="menu"><a href="#about">عن الأكاديمية</a><a href="#cats">الفئات</a><a href="#staff">الجهاز الفني</a><a href="#board">الإعلانات</a><a href="#sched">المواعيد</a><a href="#join">التسجيل</a><a href="#staff-portal">بوابة الطاقم</a></nav></header>
+
+<div class="hero"><div>
+<h1>أكاديمية مواهب صوريف الكروية</h1>
+<p>نكتشف المواهب في صوريف والخليل ونصنع منها لاعبين</p>
+<a class="btn" href="#join">انضم إلينا</a></div></div>
+
+<div class="wrap"><div class="stats">
+<div><b>2023</b><span>سنة التأسيس</span></div><div><b>3</b><span>فئات عمرية</span></div><div><b>معتمد</b><span>جهاز فني</span></div></div></div>
+
+<section id="about"><div class="wrap"><h2>عن الأكاديمية</h2>
+<p class="lead">منذ عام 2023 تعمل أكاديمية مواهب صوريف على اكتشاف المواهب الكروية في المنطقة وتطويرها. نجمع بين التدريب الفني الصحيح وروح الفريق والانضباط، ليتعلم كل لاعب ويستمتع باللعب. مقرنا ملعب بلدية صوريف، الخليل.</p></div></section>
+
+<section id="cats" class="dark"><div class="wrap"><h2>الفئات العمرية</h2>
+<div class="grid">
+<div class="box"><h3>البراعم</h3><p>التعرف على الكرة، الحركة، واللعب الجماعي.</p></div>
+<div class="box"><h3>الناشئون</h3><p>التمرير والمراوغة والتسديد وفهم المراكز.</p></div>
+<div class="box"><h3>الشباب</h3><p>تكتيك ولياقة ومباريات تنافسية.</p></div></div></div></section>
+
+<section id="staff"><div class="wrap"><h2>الجهاز الفني</h2>
+<p class="lead">مدربونا أصحاب خبرة ميدانية وحاصلون على شهادات تدريب معتمدة.</p>
+<div class="grid">
+<div class="box"><h3>خبرة ميدانية</h3><p>سنوات من العمل مع الفئات السنية المختلفة.</p></div>
+<div class="box"><h3>شهادات تدريب</h3><p>مؤهلات معتمدة في تدريب كرة القدم.</p></div>
+<div class="box"><h3>متابعة فردية</h3><p>ملاحظات واضحة لكل لاعب وأسرته.</p></div></div></div></section>
+
+<section id="board" style="padding-top:0"><div class="wrap"><h2>لوحة الإعلانات</h2><div id="ann"></div></div></section>
+<section id="sched" class="dark"><div class="wrap"><h2>مواعيد التدريب</h2><div id="sch"></div></div></section>
+<section id="potw"><div class="wrap"><h2>لاعب الأسبوع</h2><div id="pw"></div></div></section>
+
+<section id="join" class="dark"><div class="wrap"><h2>سجّل في الأكاديمية</h2>
+<p class="lead">املأ البيانات وسنتواصل معك على واتساب لتأكيد التسجيل.</p>
+<form id="f">
+<label>اسم اللاعب<input name="n" required autocomplete="name"></label>
+<label>العمر<input name="a" type="number" min="3" max="40" required inputmode="numeric"></label>
+<label>الفئة<select name="c"><option>براعم</option><option>ناشئين</option><option>شباب</option></select></label>
+<label>رقم هاتف ولي الأمر<input name="p" type="tel" required autocomplete="tel" inputmode="tel"></label>
+<button class="btn" type="submit">أرسل طلب التسجيل</button><div id="msg" role="status"></div></form>
+<p style="margin-top:26px"><a class="btn out" style="color:#fff" href="https://wa.me/972598095013" target="_blank" rel="noopener">راسلنا على واتساب</a>
+<a class="btn out" style="color:#fff;margin-inline-start:8px" href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%84%D8%B9%D8%A8+%D8%A8%D9%84%D8%AF%D9%8A%D8%A9+%D8%B5%D9%88%D8%B1%D9%8A%D9%81" target="_blank" rel="noopener">موقعنا على الخريطة</a></p></div></section>
+
+<section id="staff-portal"><div class="wrap"><details style="max-width:680px"><summary class="btn" style="cursor:pointer">بوابة الطاقم التدريبي</summary>
+<p class="lead" style="margin-top:14px">للمدربين: سجّلوا تقييم لاعب أو تقرير تدريب أو مباراة.</p>
+<p><a class="btn out" href="https://docs.google.com/forms/d/e/1FAIpQLSdICmHV6qNB0c6LkKy3f93PQB0dXrSMWY-wF_oPc5ycB0VDXA/viewform" target="_blank" rel="noopener">افتح النموذج</a></p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdICmHV6qNB0c6LkKy3f93PQB0dXrSMWY-wF_oPc5ycB0VDXA/viewform?embedded=true" title="نموذج الطاقم التدريبي" loading="lazy" style="width:100%;height:1800px;border:0;background:#fff;border-radius:10px"></iframe></details></div></section>
+
+<footer>© 2023 أكاديمية مواهب صوريف الكروية، الخليل</footer>
+
+<script>
+var WA="972598095013";
+var bg=document.getElementById("bg"),mn=document.getElementById("menu");
+bg.onclick=function(){var o=mn.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+mn.onclick=function(){mn.classList.remove("open")};
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();var d=new FormData(e.target);
+ var t="طلب تسجيل في أكاديمية مواهب صوريف%0Aالاسم: "+encodeURIComponent(d.get("n"))+"%0Aالعمر: "+d.get("a")+"%0Aالفئة: "+encodeURIComponent(d.get("c"))+"%0Aالهاتف: "+encodeURIComponent(d.get("p"));
+ window.open("https://wa.me/"+WA+"?text="+t,"_blank");document.getElementById("msg").textContent="تم تجهيز طلبك على واتساب، اضغط إرسال هناك."});
+‎// عدّل هذا القسم لتحديث الإعلانات والمواعيد ولاعب الأسبوع
+var CONFIG={announcements:[],schedule:[],potw:null,
+ note:"مواعيد التدريب تختلف حسب الفئة. راسلنا على واتساب لمعرفة موعد فئة ابنك."};
+(function(){
+ function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+ var a=document.getElementById("ann");
+ CONFIG.announcements.forEach(function(x){var d=el("div","card");d.append(el("b","",x.date),el("p","",x.text));a.append(d)});
+ if(!CONFIG.announcements.length)a.append(el("p","lead","لا توجد إعلانات حالياً."));
+ var c=document.getElementById("sch");
+ CONFIG.schedule.forEach(function(x){var d=el("div","card");d.append(el("b","",x.day+" - "+x.time),el("p","",x.cat+" | ملعب بلدية صوريف"));c.append(d)});
+ if(!CONFIG.schedule.length){c.append(el("p","lead",CONFIG.note));var b=el("a","btn","اسأل عن المواعيد");b.href="https://wa.me/"+WA+"?text="+encodeURIComponent("مرحباً، أبغى أعرف مواعيد التدريب");b.target="_blank";b.rel="noopener";c.append(b)}
+ var w=document.getElementById("pw");
+ if(CONFIG.potw){var d=el("div","potw");d.append(el("h3","",CONFIG.potw.name),el("p","",CONFIG.potw.cat+(CONFIG.potw.note?" | "+CONFIG.potw.note:"")));w.append(d)}
+ else w.append(el("p","lead","سيتم اختيار لاعب الأسبوع قريباً."));
+})();
+</script>
+</body>
+</html>
